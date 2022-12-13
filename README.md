@@ -1,1 +1,0 @@
-# curriculo_online_portifolio_dev
