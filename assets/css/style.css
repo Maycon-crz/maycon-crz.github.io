@@ -27,4 +27,17 @@ body{
         transform: translateY(0);
     }
 }
+
+.projectImages{
+    width: 100%;
+    max-width: 130px;
+    height: 130px;    
+
+    /* 
+    //Este código alinha a imagem ao centro
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    */
+}
   
