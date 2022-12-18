@@ -14,6 +14,9 @@ body{
     border: 6px solid #1C1C1C;
     border-radius: 30px;
     animation: go-back 1s infinite alternate;
+    width: 100%;
+    min-width: 100px;
+    max-width: 338px;
 }
 #fotoPerfilDesenho:hover{
     border: 6px solid #3a2b2bd0;
@@ -52,9 +55,12 @@ body{
 
 
 
-@media only screen and (max-width: 765px) {      
+@media only screen and (max-width: 765px) {          
     .card p{
         min-height: 500px !important;
+    }
+    #animacaoFotoPerfil{
+        height: 45vh;
     }
 }
 
