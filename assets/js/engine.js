@@ -1,4 +1,4 @@
-$(".maisInformacoes").click(()=>{
-    const linha = $(this).val();
+$(".maisInformacoes").click(function (){    
+    const linha = $(this).val();    
     $("#"+linha).toggle();
-})
+});

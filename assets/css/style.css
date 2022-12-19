@@ -3,6 +3,10 @@ body{
     color:white;
 }
 
+h1, h2{
+    font-size: clamp(2em, 1em + 1vw, 1.5em) !important;
+}
+
 #animacaoFotoPerfil {
     display: flex;
     justify-content: center;
@@ -39,6 +43,10 @@ body{
     min-height: 220px;
 }
 
+.card h4{
+    font-size: clamp(1em, 1em + 1vw, 1.5em);
+}
+
 .projectImages{
     width: 100%;
     max-width: 130px;
@@ -53,19 +61,31 @@ body{
     */
 }
 
-
-
-@media only screen and (max-width: 765px) {          
-    .card p{
-        min-height: 500px !important;
-    }
-    #animacaoFotoPerfil{
-        height: 45vh;
-    }
+.cardsDisplayNone{
+    display: none;
 }
 
 @media only screen and (max-width: 1201px) {      
+    .card{
+        min-height: 686px !important;
+    }
     .card p{
-        min-height: 220px !important;
+        /* background-color: red; */
+        min-height: 360px !important;
+    }
+}
+
+@media only screen and (max-width: 765px) {
+    .card{
+        min-height: 0 !important;
+    }          
+    .card p{
+        min-height: 0 !important;
+    }
+    #animacaoFotoPerfil{
+        height: 65vh;
+    }
+    .card a{
+        width: 100% !important;
     }
 }
