@@ -11,7 +11,7 @@ h1, h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 80vh !important;
 }
 
 #fotoPerfilDesenho{    
@@ -36,12 +36,15 @@ h1, h2{
 }
 
 .card{
-    min-height: 480px;
+    min-height: 300px;
 }
 
-.card p{
-    min-height: 220px;
-}
+.card-title{
+    width: 100%;
+ }
+ .text-center{
+    width: 100%;
+ }
 
 .card h4{
     font-size: clamp(1em, 1em + 1vw, 1.5em);
@@ -67,11 +70,7 @@ h1, h2{
 
 @media only screen and (max-width: 1201px) {      
     .card{
-        min-height: 686px !important;
-    }
-    .card p{
-        /* background-color: red; */
-        min-height: 360px !important;
+        min-height: 586px !important;
     }
 }
 
@@ -85,7 +84,8 @@ h1, h2{
     #animacaoFotoPerfil{
         height: 65vh;
     }
-    .card a{
-        width: 100% !important;
+    .card a{        
+        width: 50% !important;
+        min-width: 95px !important;
     }
 }
