@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+.slideImages{
+    width:90%;
+    max-width: 900px;
+    height: 490px;
+}
+
 :root{
     --color-bg: linear-gradient(to top,#010329,#000005);
     --color-glass:linear-gradient(to left,#142544,#1a9092);
