@@ -29,6 +29,10 @@ h1, h2{
     width: 100%;
     min-width: 100px;
     max-width: 338px;
+    height: 336px;
+}
+#fotoPerfilDesenho img{
+    border-radius: 30px;
 }
 #fotoPerfilDesenho:hover{
     border: 6px solid #3a2b2bd0;
@@ -70,6 +74,9 @@ h1, h2{
     margin-left: auto;
     margin-right: auto; 
     */
+}
+.projectImages img{
+    border-radius: 10px;
 }
 
 .cardsDisplayNone{
