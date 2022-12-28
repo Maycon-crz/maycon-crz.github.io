@@ -54,8 +54,8 @@
     </nav>
     <main>
         <section class="row">
-            <div class="col-8 border">
-                <h1>RecicladArte - (EM CONSTRUÇÃO)<a href="https://www.recicladarte.com/" target="_blank">ACESSAR SITE</a></h1>
+            <div class="col-8 p-5">
+                <h1>RecicladArte</h1>
                 <p>Site com conteúdos relacionados a ecologia, sustentabilidade, meio Ambiente, reutilização, a idéia é expandir e virar uma plataforma com mais interações entre usuários, onde um certo tipo de usuário vai poder empreender de forma consciente e a favor ao meio ambiente, e o outro tipo ira contribuir mas também será incentivado de uma certa forma.</p>
                 <h2>Tecnologias utilizadas</h2>
                 <ul>
@@ -70,80 +70,26 @@
                 </ul>
                 <h3>API</h3>
                 <p>A plataforma conta com uma API criada para integrar o site com o Aplicativo que está sendo criado em Dart/Flutter. No momeno está disponível login, alguns cadastros, edições e exclusões como o de usuário, postagens, charges porém no momento só o administrador pode cadastrar editar e deletar a charge, estão disponíveis também os endpoints para retorno de listagem além dos já citados mais cursos e quiz.</p>
+                <a href="https://www.recicladarte.com/" target="_blank"><button type="button" class="btn btn-outline-success">ACESSAR SITE</button></a>
             </div>
-            <div class="col-2 border">
-                <img src="../assets/img/logo_recicladarte.jpg" class="projectImages mt-5" />
+            <div class="col-md-2 pt-5">
+                <a href="https://www.recicladarte.com" target="_blank"><amp-img src="../assets/img/logo_recicladarte.jpg" alt="Logo da plataforma Recicladarte" class="projectImages mt-5" layout="responsive"></amp-img></a>
             </div>
-            <div class="col-md-2 col-xs-12 growingLine border">
-                <div class="growing"></div>
+            <div class="col-md-2 col-xs-12 growingLine">
+                <div class="growing"></div>                
             </div>
         </section>
         <section class="row">
-            <div class="col-9 border">
-                <div id="carouselExampleCaptions" class="carousel slide text-center data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../assets/img/pages/home.PNG" class="slideImages"
-                                alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>....................</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/img/pages/diy.PNG" class="slideImages"
-                                alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>....................</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/img/pages/charges.PNG" class="slideImages"
-                                alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>....................</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/img/pages/login.PNG" class="slideImages"
-                                alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>....................</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../assets/img/pages/cadastro.PNG" class="slideImages"
-                                alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Four slide label</h5>
-                                <p>....................</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
+            <div class="col-9 p-5">
+                <amp-base-carousel loop="true"  width="600" height="400" layout="responsive">
+                    <amp-img src="../assets/img/pages/home.PNG" width="600" height="400" layout="responsive"></amp-img>
+                    <amp-img src="../assets/img/pages/diy.PNG" width="600" height="400" layout="responsive"></amp-img>
+                    <amp-img src="../assets/img/pages/charges.PNG" width="600" height="400" layout="responsive"></amp-img>
+                    <amp-img src="../assets/img/pages/login.PNG" width="600" height="400" layout="responsive"></amp-img>
+                    <amp-img src="../assets/img/pages/cadastro.PNG" width="600" height="400" layout="responsive"></amp-img>
+                </amp-base-carousel>               
             </div>
-            <div class="col-3 flowerLine border">
+            <div class="col-3 flowerLine">
                 <div class="flower">
                     <div class="f-wrapper">
                         <div class="flower__line"></div>

@@ -19,7 +19,8 @@
 
 .flowerLine{
     /* background-image:var(--color-bg); */
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    height: 87vh;
     display: flex;
     justify-content: center;
     align-items:flex-end;
@@ -361,7 +362,7 @@
 /* Animação de vaso de rosa */
 .growingLine {
     margin:0;
-    height:50vh;
+    height:46vh;
     display:grid;
     place-items:center;
     /* background:lightblue; */
