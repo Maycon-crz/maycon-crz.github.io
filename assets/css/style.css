@@ -9,6 +9,7 @@
 body{
     background-color: #1C1C1C !important;
     color:white;
+    overflow-x: hidden;
 }
 
 h1, h2{
