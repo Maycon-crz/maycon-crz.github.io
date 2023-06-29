@@ -79,6 +79,10 @@ h1, h2{
 .projectImages img{
     border-radius: 10px;
 }
+.certificatesImg{
+    max-width: 690px !important;
+    height: 390px !important;
+}
 
 .cardsDisplayNone{
     display: none;
