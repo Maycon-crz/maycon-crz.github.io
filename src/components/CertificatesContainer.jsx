@@ -5,13 +5,13 @@ const CertificatesContainer = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [
-    "/maycon-crz.github.io/img/certificates/php_avancado.PNG",
-    "/maycon-crz.github.io/img/certificates/inteligencia_artificial.PNG",
-    "/maycon-crz.github.io/img/certificates/lgpd.PNG",
-    "/maycon-crz.github.io/img/certificates/flutter_1.PNG",
-    "/maycon-crz.github.io/img/certificates/flutter_2.PNG",
-    "/maycon-crz.github.io/img/certificates/flutter_3.PNG",
-    "/maycon-crz.github.io/img/certificates/flutter_4.PNG",
+    "/img/certificates/php_avancado.PNG",
+    "/img/certificates/inteligencia_artificial.PNG",
+    "/img/certificates/lgpd.PNG",
+    "/img/certificates/flutter_1.PNG",
+    "/img/certificates/flutter_2.PNG",
+    "/img/certificates/flutter_3.PNG",
+    "/img/certificates/flutter_4.PNG",
   ];
 
   const nextSlide = () => {

@@ -5,47 +5,47 @@ import "../styles/components/projectsContainer.sass"
 
 const ProjectsContainer = () => {
   const recicladarteSite = [
-    "/maycon-crz.github.io/img/recicladarte/site/home.PNG",
-    "/maycon-crz.github.io/img/recicladarte/site/diy.PNG",
-    "/maycon-crz.github.io/img/recicladarte/site/charges.PNG",
-    "/maycon-crz.github.io/img/recicladarte/site/login.PNG",
-    "/maycon-crz.github.io/img/recicladarte/site/cadastro.PNG"
+    "/img/recicladarte/site/home.PNG",
+    "/img/recicladarte/site/diy.PNG",
+    "/img/recicladarte/site/charges.PNG",
+    "/img/recicladarte/site/login.PNG",
+    "/img/recicladarte/site/cadastro.PNG"
   ];
 
   const devPegasus = [
-    "/maycon-crz.github.io/img/devpegasus/home_devpegasus.PNG",
-    "/maycon-crz.github.io/img/devpegasus/page_text_devpegasus.PNG"
+    "/img/devpegasus/home_devpegasus.PNG",
+    "/img/devpegasus/page_text_devpegasus.PNG"
   ];
 
   const receitasEdrinks = [
-    "/maycon-crz.github.io/img/receitas_e_drinks/site/homeReceitas.PNG",
-    "/maycon-crz.github.io/img/receitas_e_drinks/site/home_mobile.PNG",
-    "/maycon-crz.github.io/img/receitas_e_drinks/site/home_mobile2.PNG",
-    "/maycon-crz.github.io/img/receitas_e_drinks/site/home_mobile3.PNG"
+    "/img/receitas_e_drinks/site/homeReceitas.PNG",
+    "/img/receitas_e_drinks/site/home_mobile.PNG",
+    "/img/receitas_e_drinks/site/home_mobile2.PNG",
+    "/img/receitas_e_drinks/site/home_mobile3.PNG"
   ];
 
   const sistemasDistribuidos = [
-    "/maycon-crz.github.io/img/modelo_php_flutter/app/login_v2.PNG",
-    "/maycon-crz.github.io/img/modelo_php_flutter/app/exemplo_edicao_de_postagem_parte_1.PNG",
-    "/maycon-crz.github.io/img/modelo_php_flutter/app/edicao_de_postagem_parte_2.PNG",
-    "/maycon-crz.github.io/img/modelo_php_flutter/app/exclusao_de_postagem_parte_1.PNG",
-    "/maycon-crz.github.io/img/modelo_php_flutter/site/home.PNG",
-    "/maycon-crz.github.io/img/modelo_php_flutter/site/janela_de_login_e_cadastro_de_usuario_parte_1.PNG",
-    "/maycon-crz.github.io/img/modelo_php_flutter/site/painel_de_usuario_parte_1.PNG"  
+    "/img/modelo_php_flutter/app/login_v2.PNG",
+    "/img/modelo_php_flutter/app/exemplo_edicao_de_postagem_parte_1.PNG",
+    "/img/modelo_php_flutter/app/edicao_de_postagem_parte_2.PNG",
+    "/img/modelo_php_flutter/app/exclusao_de_postagem_parte_1.PNG",
+    "/img/modelo_php_flutter/site/home.PNG",
+    "/img/modelo_php_flutter/site/janela_de_login_e_cadastro_de_usuario_parte_1.PNG",
+    "/img/modelo_php_flutter/site/painel_de_usuario_parte_1.PNG"  
   ];  
 
 
   const aplicativoRecicladArte = [
-    "/maycon-crz.github.io/img/recicladarte/app/home.jpg",
-    "/maycon-crz.github.io/img/recicladarte/app/charges.jpg",
-    "/maycon-crz.github.io/img/recicladarte/app/quiz.jpg",
+    "/img/recicladarte/app/home.jpg",
+    "/img/recicladarte/app/charges.jpg",
+    "/img/recicladarte/app/quiz.jpg",
   ];
 
   const sistemaJava = [
-    "/maycon-crz.github.io/img/sistema_java/login.PNG",
-    "/maycon-crz.github.io/img/sistema_java/painel.PNG",
-    "/maycon-crz.github.io/img/sistema_java/cadastros.jpeg",
-    "/maycon-crz.github.io/img/sistema_java/cadastro_de_clientes.jpeg"
+    "/img/sistema_java/login.PNG",
+    "/img/sistema_java/painel.PNG",
+    "/img/sistema_java/cadastros.jpeg",
+    "/img/sistema_java/cadastro_de_clientes.jpeg"
   ];
 
 
@@ -118,7 +118,7 @@ const ProjectsContainer = () => {
           <p>
             &emsp;Este site portfólio foi construído com o intuito de mostrar um pouco sobre os projetos que desenvolvi. As tecnologias usadas no projeto são: Javascript, ReactJS, SASS, GIT, está hospedado no GitHub Pages com acesso ao código público.
             <br/>
-            Aqui está o <a href="https://github.com/Maycon-crz/maycon-crz.github.io" target="_blank">Link</a> para o repositório do site portfólio.
+            Aqui está o <a href="https://github.com/Maycon-crz" target="_blank">Link</a> para o repositório do site portfólio.
             <br/><br/><br/>
             Aplicativo - Receitas e Drinks (Em breve)
             <br/><br/>
