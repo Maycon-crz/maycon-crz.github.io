@@ -2,7 +2,7 @@
   "name": "maycon-crz.github.io",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://maycon-crz.github.io/maycon-crz.github.io",
+  "homepage": "./",
   "type": "module",
   "scripts": {
     "dev": "vite",
