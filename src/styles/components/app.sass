@@ -1,0 +1,29 @@
+@use '../variables'
+
+#portfolio
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    padding: 3rem
+    gap: 3rem
+
+    h1
+        width: 100%
+        color: variables.$text-color
+        font-size: 3rem
+        margin-bottom: 4rem
+        background: variables.$gradient
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+
+    .row
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center        
+
+        
+@media (max-width: 139px)
+    #portfolio
+        flex-direction: column
+        padding: 1rem

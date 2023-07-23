@@ -1,0 +1,50 @@
+.nav-tabs
+    display: flex
+    justify-content: flex-start    
+    border-bottom: 1px solid #dee2e6
+    list-style-type: none
+    padding: 0
+    margin: 0
+
+
+    .nav-item
+        margin-bottom: -1px
+        color: red
+
+
+        .nav-link
+            display: inline-block
+            padding: 0.5rem 1rem
+            border: 1px solid transparent
+            border-top-left-radius: 0.25rem
+            border-top-right-radius: 0.25rem
+            color: #fff
+            background-color: transparent
+            cursor: pointer
+            transition: all 0.3s
+
+            &.active 
+                border-color: #dee2e6 #dee2e6 #fff
+                background-color: transparent
+            
+
+            &:hover
+                background-color: #f8f9fa
+                color: #000
+            
+
+
+        .tab-content
+            padding: 1rem
+            border: 1px solid #dee2e6
+            border-top: none
+
+
+            .tab-pane
+                display: none                        
+                padding: 30rem
+
+                &.fade.show
+                    display: block
+            
+
