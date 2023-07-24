@@ -5,11 +5,12 @@ const FooterContainer = () => {
     <footer>
         <section>            
             <ul>
-                <li>Linkedin: <a target="_blank"
-                        href="https://www.linkedin.com/in/mayconnascioliveira/">https://www.linkedin.com/in/mayconnascioliveira/</a>
+                <li>
+                  <a target="_blank" href="https://www.linkedin.com/in/mayconnascioliveira/">Linkedin</a>
                 </li>
-                <li>GitHub: <a target="_blank"
-                        href="https://github.com/Maycon-crz">https://github.com/Maycon-crz</a></li>                
+                <li>
+                  <a target="_blank" href="https://github.com/Maycon-crz">GitHub</a>
+                </li>
                 <li>E-mail: mayconnascimentodeoliveira23@gmail.com</li>                
                 <li>Data de nascimento: 21 de abril 1999</li>
             </ul>
