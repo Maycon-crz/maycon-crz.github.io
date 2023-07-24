@@ -1,4 +1,4 @@
-import Avatar from "/img/eu.png";
+import Avatar from "/img/eu_estilizado.png";
 import SocialNetworks from "./SocialNetworks";
 import InformationContainer from "./InformationContainer";
 
