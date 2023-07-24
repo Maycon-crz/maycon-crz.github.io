@@ -130,7 +130,7 @@ const ProjectsContainer = () => {
       {showDetailsRecicladArte && (
         <div className="project-details">
           <button onClick={() => handleCloseDetails("recicladarte")}>X</button>
-          <h3>Acesse <a href="https://www.recicladarte.com/" target="_blank">www.recicladarte.com</a></h3>
+          <h3>Acesse <a href="https://www.recicladarte.com/" target="_blank">RecicladArte</a></h3>
           <h4>Tecnologias usadas no projeto RecicladArte</h4>
           <ul>
             <li>PHP</li>
@@ -157,7 +157,7 @@ const ProjectsContainer = () => {
       {showDetailsDevPegasus && (
         <div className="project-details">
           <button onClick={() => handleCloseDetails("devpegasus")}>X</button>
-          <h3>Acesse <a href="https://www.devpegasus.com/" target="_blank">www.devpegasus.com</a></h3>
+          <h3>Acesse <a href="https://www.devpegasus.com/" target="_blank">DevPegasus</a></h3>
           <h4>Tecnologias usadas no  projeto Dev Pegasus</h4>
           <ul>
             <li>PHP</li>
