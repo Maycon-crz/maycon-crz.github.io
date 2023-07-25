@@ -9,7 +9,7 @@
     padding: 1rem
     margin-bottom: 2rem
     text-align: left
-    // width: 80%
+    max-width: 288px
     border-radius: variables.$card-border-radius
     transition: all 0.3s ease-out // Adiciona uma transição suave quando a div se torna fixa
 
@@ -35,6 +35,8 @@
         p
             color: variables.$text-color
             font-weight: bold
+            white-space: pre-wrap
+            word-break: break-word
 
         .link-svg
             padding-top: 0.2rem
@@ -59,13 +61,19 @@
             color: #6ab5b9
 
         #email-icon
-            color: #c17ceb                
+            color: #c17ceb
 
-        #email-address
-            font-size: 0.6rem
+    #row-link-redirect-topo
+        display: none
 
     .center
         @include mixins.center
+
+
+@media (min-width: 1039px)
+    #information > #row-link-redirect-topo
+        display: block
+        text-align: center
 
 @media (max-width: 768px)
     #information

@@ -37,7 +37,7 @@ const SkillsTabs = () => {
             </button>
           </a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item" id="button-redirect-certificates">
           <a href="#certificates-carousel-container">
             <button className={`nav-link`}>
                 Certificados

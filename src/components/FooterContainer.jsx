@@ -11,7 +11,6 @@ const FooterContainer = () => {
                 <li>
                   <a target="_blank" href="https://github.com/Maycon-crz">GitHub</a>
                 </li>
-                <li>E-mail: mayconnascimentodeoliveira23@gmail.com</li>                
                 <li>Data de nascimento: 21 de abril 1999</li>
             </ul>
             <span>© 2023 Maycon Nascimento de Oliveira. Made with in
