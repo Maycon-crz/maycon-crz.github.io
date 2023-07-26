@@ -27,10 +27,40 @@
             width: 13%
             border-radius: variables.$card-border-radius 
             text-align: center
+            position: relative //Adiciona posicionamento relativo para os elementos internos
 
             h4
                 color: variables.$text-color
                 margin-bottom: 1rem
+
+            /* Estilo para o texto sobreposto (invisível por padrão) */
+            .overlay-text
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                background-color: rgba(0, 0, 0, 0.7) //Cor de fundo com transparência
+                display: flex
+                justify-content: center
+                align-items: center
+                opacity: 0 /* Torna o texto invisível por padrão */
+                transition: opacity 0.3s ease /* Transição suave de opacidade */
+                border-radius: variables.$card-border-radius
+            
+
+            /* Mostra o texto quando o mouse estiver sobre o card */
+            &:hover .overlay-text 
+                opacity: 1 //Torna o texto visível quando o mouse passa por cima do card
+            
+
+            /* Estilo do texto dentro da div .overlay-text */
+            .overlay-text p
+                color: #fff
+                font-size: 16px
+                padding: 8px 16px
+                border-radius: 4px
+        
 
         svg
             font-size: 3rem
@@ -50,6 +80,14 @@
         svg
             color: #02569B
 
+    #java
+        svg
+            color: #007396
+
+    #python
+        svg
+            color: #3776AB
+
     #sql
         svg
             color: #FF0000
@@ -65,6 +103,10 @@
     #css
         svg
             color: #1572B6
+
+    #sass
+        svg
+            color: #CC6699
 
     #react
         svg

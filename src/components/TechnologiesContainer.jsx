@@ -6,6 +6,9 @@ import {
   DiReact,
   DiBootstrap,
   DiJqueryLogo,
+  DiJava,
+  DiPython,
+  DiSass
 } from "react-icons/di"
 import { SiPhp, SiDart, SiFlutter } from "react-icons/si";
 import { PiFileSql } from "react-icons/pi";
@@ -13,17 +16,20 @@ import { PiFileSql } from "react-icons/pi";
 import "../styles/components/technologiescontainer.sass";
 
 const technologies = [
-  { id: "php", name: "PHP", icon: <SiPhp /> },
-  { id: "js", name: "JavaScript", icon: <DiJsBadge /> },
-  { id: "dart", name: "Dart", icon: <SiDart /> },
-  { id: "flutter", name: "Flutter", icon: <SiFlutter /> },
-  { id: "sql", name: "SQL", icon: <PiFileSql />  },
-  { id: "mysql", name: "MySQL", icon: <DiMysql /> },
-  { id: "html", name: "HTML5", icon: <DiHtml5 /> },
-  { id: "css", name: "CSS3", icon: <DiCss3 /> },
-  { id: "react", name: "React", icon: <DiReact /> },
-  { id: "bootstrap", name: "Bootstrap", icon: <DiBootstrap /> },  
-  { id: "jquery", name: "Jquery", icon: <DiJqueryLogo /> },    
+  { id: "php", name: "PHP", icon: <SiPhp />, textHover: "Nível Avançado" },
+  { id: "js", name: "JavaScript", icon: <DiJsBadge />, textHover: "Nível Intermediário" },
+  { id: "dart", name: "Dart", icon: <SiDart />, textHover: "Nível Avançado" },
+  { id: "flutter", name: "Flutter", icon: <SiFlutter />, textHover: "Nível Avançado" },
+  { id: "java", name: "Java", icon: <DiJava />, textHover: "Nível Básico" },
+  { id: "python", name: "Python", icon: <DiPython />, textHover: "Nível Iniciante" },
+  { id: "sql", name: "SQL", icon: <PiFileSql /> , textHover: "Nível Intermediário" },
+  { id: "mysql", name: "MySQL", icon: <DiMysql />, textHover: "Nível Intermediário" },
+  { id: "html", name: "HTML5", icon: <DiHtml5 />, textHover: "Nível Intermediário" },
+  { id: "css", name: "CSS3", icon: <DiCss3 />, textHover: "Nível Intermediário" },
+  { id: "sass", name: "SASS", icon: <DiSass />, textHover: "Nível Iniciante" },
+  { id: "react", name: "React", icon: <DiReact />, textHover: "Nível Básico" },
+  { id: "bootstrap", name: "Bootstrap", icon: <DiBootstrap />, textHover: "Nível Avançado" },
+  { id: "jquery", name: "Jquery", icon: <DiJqueryLogo />, textHover: "Nível Avançado" },
 ];
 
 const TechnologiesContainer = () => {
@@ -31,7 +37,7 @@ const TechnologiesContainer = () => {
     <section className="technologies-container">
       <h2>Profissional</h2>
       <h3>🎯💻Quem é o Maycon enquanto profissional?</h3>
-      <p>&emsp;Tenho habilidades necessárias para o desenvolvimento de sites, sistemas web e aplicativos, experiência recente com Flutter onde desenvolvi um sistema completo para windows consumindo API desenvolvida em PHP, consegui ter uma boa experiência no desenvolvimento em equipe na última empresa que trabalhei, participei do desenvolvimento da base de um aplicativo novo com Flutter nesta empresa e aprimoramento de outro app com a mesma tecnologia, estou no último semestre de ADS, possuo certificado em PHP cursado no programa Entra21 em 2016 e de cursos online mais recentes como, desenvolvimento avançado em PHP realizado na plataforma DIO, buscando sempre se atualizar.</p>
+      <p>&emsp;Possuo habilidades necessárias para o desenvolvimento de sites, sistemas web e aplicativos, experiência recente com Flutter onde desenvolvi um sistema completo para windows consumindo API desenvolvida em PHP, consegui ter uma boa experiência no desenvolvimento em equipe na última empresa que trabalhei, participei do desenvolvimento da base de um aplicativo novo com Flutter nesta empresa e aprimoramento de outro app com a mesma tecnologia, tecnólogo ADS concluído no 1º semestre de 2023, possuo certificado em PHP cursado no programa Entra21 em 2016 e de cursos online mais recentes como, desenvolvimento avançado em PHP realizado na plataforma DIO, busco sempre me atualizar.</p>
       <h3>Arquitetura e organização</h3>
       <ul className="list-architecture-and-organization">
         <li>MVC, Módulos, baixo acoplamento e alta coesão;</li>
@@ -44,10 +50,13 @@ const TechnologiesContainer = () => {
       <h3>Tecnologias</h3>
       <div className="technologies-grid">
         {technologies.map((tech) => (
-          <div className="technology-card" id={tech.id} key={tech.id}>            
+          <div className="technology-card" id={tech.id} key={tech.id}>
             <div className="technology-info">
               {tech.icon}
               <h4>{tech.name}</h4>
+            </div>
+            <div className="overlay-text">
+              <p>{tech.textHover}</p>
             </div>
           </div>
         ))}
