@@ -21,7 +21,7 @@ const technologies = [
   { id: "dart", name: "Dart", icon: <SiDart />, textHover: "Nível Avançado" },
   { id: "flutter", name: "Flutter", icon: <SiFlutter />, textHover: "Nível Avançado" },
   { id: "java", name: "Java", icon: <DiJava />, textHover: "Nível Básico" },
-  { id: "python", name: "Python", icon: <DiPython />, textHover: "Nível Iniciante" },
+  { id: "python", name: "Python", icon: <DiPython />, textHover: "Nível Curioso" },
   { id: "sql", name: "SQL", icon: <PiFileSql /> , textHover: "Nível Intermediário" },
   { id: "mysql", name: "MySQL", icon: <DiMysql />, textHover: "Nível Intermediário" },
   { id: "html", name: "HTML5", icon: <DiHtml5 />, textHover: "Nível Intermediário" },
@@ -37,15 +37,17 @@ const TechnologiesContainer = () => {
     <section className="technologies-container">
       <h2>Profissional</h2>
       <h3>🎯💻Quem é o Maycon enquanto profissional?</h3>
-      <p>&emsp;Possuo habilidades necessárias para o desenvolvimento de sites, sistemas web e aplicativos, experiência recente com Flutter onde desenvolvi um sistema completo para windows consumindo API desenvolvida em PHP, consegui ter uma boa experiência no desenvolvimento em equipe na última empresa que trabalhei, participei do desenvolvimento da base de um aplicativo novo com Flutter nesta empresa e aprimoramento de outro app com a mesma tecnologia, tecnólogo ADS concluído no 1º semestre de 2023, possuo certificado em PHP cursado no programa Entra21 em 2016 e de cursos online mais recentes como, desenvolvimento avançado em PHP realizado na plataforma DIO, busco sempre me atualizar.</p>
+      <p>&emsp;Possuo habilidades necessárias para o desenvolvimento de sites, aplicações e aplicativos;</p>
+      <p>&emsp;Experiência com PHP e Flutter onde desenvolvi um projeto pessoal que está online e publicado na Google Play, um sistema completo com aplicativo, integrados por uma API desenvolvida em PHP, a plataforma Recicladarte;</p>
+      <p>&emsp; Obtive uma experiência boa no desenvolvimento em equipe nas últimas empresas de tecnologia em que trabalhei, em uma construí telas no sistema novo e no legado Java, já em outra empresa participei do desenvolvimento da base de um aplicativo novo com Flutter e aprimoramento de outro aplicativo com a mesma tecnologia;</p>
+      <p>&emsp;Formado em ADS concluído no final do 1º semestre de 2023, possuo também 2 certificados de cursos presenciais o mais recente é da DevAcademy cursado na empresa Edusoft voltado para Java em 2023 e PHP cursado no programa Entra21 em 2016 além de cursos online como desenvolvimento avançado em PHP realizado na plataforma DIO entre outros, estou sempre buscando me atualizar e evoluir.</p>
+      
       <h3>Arquitetura e organização</h3>
       <ul className="list-architecture-and-organization">
         <li>MVC, Módulos, baixo acoplamento e alta coesão;</li>
         <li>kanban e Scrum Básco;</li>
-        <li>Geralmente utilizo VS CODE, Workbench, Canva, Hostgator, Cloudflare,
-          GitHub e Git para desenvolver projetos;</li>
-        <li>Estou desenvolvendo um sistema que funciona como assistente pessoal;
-        </li>
+        <li>Geralmente utilizo VS CODE, Workbench, Canva, Hostgator, Cloudflare, GitHub e Git para desenvolver projetos;</li>
+        <li>Estou usando Bitrix24 para criar quadros kanban, Obsidian para anotações e diagrams.net para UML.</li>
       </ul>
       <h3>Tecnologias</h3>
       <div className="technologies-grid">

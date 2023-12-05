@@ -79,7 +79,7 @@ const ProjectsContainer = () => {
       <div className="row">
         <div className="project-card">
           <h3>Site - RecicladArte</h3>
-          <p>&emsp;Site com conteúdos relacionados a ecologia, sustentabilidade, meio Ambiente, reutilização, a ideia é expandir e virar uma plataforma com mais interações entre usuários, onde um certo tipo de usuário vai poder empreender de forma consciente e a favor ao meio ambiente, e o outro tipo ira contribuir mas também será incentivado de uma certa forma.</p>
+          <p>&emsp;Site com conteúdos relacionados a ecologia, sustentabilidade, meio ambiente, reutilização, a ideia é expandir e virar uma plataforma com mais interações entre usuários, onde um certo tipo de usuário vai poder empreender de forma consciente e a favor ao meio ambiente, e o outro tipo ira contribuir mas também será incentivado de uma certa forma.</p>
           <Carousel images={recicladarteSite} />
           <button onClick={() => setShowDetailsRecicladArte(true)} className='btn-see-projects'>Ver Mais</button>
         </div>
