@@ -138,7 +138,7 @@ const ProjectsContainer = () => {
             <br/><br/><br/>
             Aplicativo - Receitas e Drinks (Em breve)
             <br/><br/>
-            &emsp;Após criar a API para retornar os dados do site receitas e drinks, o objetivo é criar um aplicativo Flutter para que o possa facilitar o acesso as receitas, podendo tamber ter uma melhor ergonomia, para que os usuários possam adotar o aplicativo como favorito.
+            &emsp;Após criar a API para retornar os dados do site receitas e drinks, o objetivo é criar um aplicativo Flutter para que possa facilitar o acesso as receitas, podendo também ter uma melhor ergonomia para que os usuários possam adotar o aplicativo como favorito.
           </p>
         </div>        
       </div>
