@@ -3,6 +3,7 @@ import {
   DiCss3,
   DiJsBadge,
   DiMysql,
+  DiMsqlServer,
   DiReact,
   DiBootstrap,
   DiJqueryLogo,
@@ -10,7 +11,7 @@ import {
   DiPython,
   DiSass
 } from "react-icons/di"
-import { SiPhp, SiDart, SiFlutter } from "react-icons/si";
+import { SiPhp, SiDart, SiFlutter, SiVuedotjs, SiLaravel } from "react-icons/si";
 import { PiFileSql } from "react-icons/pi";
 
 import "../styles/components/technologiescontainer.sass";
@@ -24,11 +25,14 @@ const technologies = [
   { id: "python", name: "Python", icon: <DiPython />, textHover: "Nível Curioso" },
   { id: "sql", name: "SQL", icon: <PiFileSql /> , textHover: "Nível Intermediário" },
   { id: "mysql", name: "MySQL", icon: <DiMysql />, textHover: "Nível Intermediário" },
+  { id: "sqlserver", name: "SQLServer", icon: <DiMsqlServer />, textHover: "Nível Intermediário" },
   { id: "html", name: "HTML5", icon: <DiHtml5 />, textHover: "Nível Intermediário" },
-  { id: "css", name: "CSS3", icon: <DiCss3 />, textHover: "Nível Intermediário" },
-  { id: "sass", name: "SASS", icon: <DiSass />, textHover: "Nível Iniciante" },
+  { id: "css", name: "CSS3", icon: <DiCss3 />, textHover: "Nível Intermediário" },  
+  { id: "laravel", name: "Laravel", icon: <SiLaravel />, textHover: "Nível Intermediário" },
   { id: "react", name: "React", icon: <DiReact />, textHover: "Nível Básico" },
+  { id: "vue", name: "VueJS", icon: <SiVuedotjs />, textHover: "Nível Básico" },  
   { id: "bootstrap", name: "Bootstrap", icon: <DiBootstrap />, textHover: "Nível Avançado" },
+  { id: "sass", name: "SASS", icon: <DiSass />, textHover: "Nível Iniciante" },
   { id: "jquery", name: "Jquery", icon: <DiJqueryLogo />, textHover: "Nível Avançado" },
 ];
 
