@@ -11,7 +11,7 @@ import {
   DiPython,
   DiSass
 } from "react-icons/di"
-import { SiPhp, SiDart, SiFlutter, SiVuedotjs, SiLaravel } from "react-icons/si";
+import { SiPhp, SiDart, SiFlutter, SiVuedotjs, SiLaravel, SiGit } from "react-icons/si";
 import { PiFileSql } from "react-icons/pi";
 
 import "../styles/components/technologiescontainer.sass";
@@ -34,6 +34,8 @@ const technologies = [
   { id: "bootstrap", name: "Bootstrap", icon: <DiBootstrap />, textHover: "Nível Avançado" },
   { id: "sass", name: "SASS", icon: <DiSass />, textHover: "Nível Iniciante" },
   { id: "jquery", name: "Jquery", icon: <DiJqueryLogo />, textHover: "Nível Avançado" },
+  { id: "git", name: "Git", icon: <SiGit />, textHover: "Nível Básico" },
+  
 ];
 
 const TechnologiesContainer = () => {

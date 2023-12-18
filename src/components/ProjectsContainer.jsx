@@ -124,8 +124,8 @@ const ProjectsContainer = () => {
           <button onClick={() => setShowDetailsSistemaEmJava(true)} className='btn-see-projects'>Ver Mais</button>
         </div>
         <div className="project-card">
-          <h3>Sistema CRUD de contatos desenvolvido com back-end Laravel e front-end VueJS</h3>
-          <p>&emsp;Sistema de gerenciamento de contatos utilizando as tecnologias PHP/Laravel no back-end e VueJS no front-end. Ambas as partes estão integradas no repositório crud_contatos_laravel_vue. O sistema possibilita listar, adicionar, editar e deletar os contatos cadastrados no banco de dados MySQL.</p>
+          <h3>CRUD de contatos desenvolvido com back-end Laravel e front-end VueJS</h3>
+          <p className="height-auto">&emsp;Sistema de gerenciamento de contatos utilizando as tecnologias PHP/Laravel + VueJS, ambas as partes estão integradas no repositório crud_contatos_laravel_vue. O sistema possibilita listar, adicionar, editar e deletar os contatos cadastrados no banco de dados MySQL.</p>
           <Carousel images={sistemaCRUDLaravelVueJS} />
           <button onClick={() => setShowDetailsSistemaCRUDLaravelVueJS(true)} className='btn-see-projects'>Ver Mais</button>
         </div>
