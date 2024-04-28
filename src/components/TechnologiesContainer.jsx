@@ -51,7 +51,7 @@ const TechnologiesContainer = () => {
       <h3>Arquitetura e organização</h3>
       <ul className="list-architecture-and-organization">
         <li>MVC, Módulos, baixo acoplamento e alta coesão;</li>
-        <li>kanban e Scrum Básco;</li>
+        <li>kanban e Scrum Básico;</li>
         <li>Geralmente utilizo VS CODE, Workbench, Canva, Hostgator, Cloudflare, GitHub e Git para desenvolver projetos;</li>
         <li>Estou usando Bitrix24 para criar quadros kanban, Obsidian para anotações e diagrams.net para UML.</li>
       </ul>
