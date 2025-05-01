@@ -5,6 +5,7 @@ const CertificatesContainer = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [
+    "/img/certificates/certificado_imersao_mobile_flutter_alura.PNG",
     "/img/certificates/php_avancado.PNG",
     "/img/certificates/inteligencia_artificial.PNG",
     "/img/certificates/lgpd.PNG",
