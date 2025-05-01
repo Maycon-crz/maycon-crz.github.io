@@ -10,34 +10,57 @@
         margin-bottom: 30px
 
 
-    .btn-see-projects
-        width: 100%
-        height: 50px
-        background-color: variables.$bg-color
-        font-size: 20px
-        color: #fff
-        border-radius: 9px            
-
-
     .project-card
         width: 45%
         height: 620px
-        justify-content: center
+        display: flex
+        flex-direction: column
+        justify-content: space-between
         margin: 1rem
         margin-bottom: 30px
         padding: 9px
         border: 1px solid #333
         border-radius: 5px
         transition: transform 0.3s ease-out
+        position: relative
+        overflow: hidden
         
         p
             height: 230px
+            margin-bottom: auto
 
         &:hover
             transform: scale(1.05)
 
         .height-auto
             height: auto !important
+
+        .btn-see-projects
+            position: absolute
+            bottom: 15px
+            left: 50%
+            transform: translateX(-50%)
+            width: 90%
+            max-width: 300px
+            margin: 0 auto
+            padding: 12px
+            font-size: 18px
+            border: none
+            cursor: pointer
+            background-color: variables.$bg-color
+            color: #fff
+            border-radius: 9px
+            text-align: center
+            transition: all 0.3s ease
+            box-sizing: border-box
+            display: flex
+            align-items: center
+            justify-content: center
+
+            &:hover
+                background-color: darken(variables.$bg-color, 10%)
+                transform: translateX(-50%) translateX(2px)
+                box-shadow: 0 2px 5px rgba(0,0,0,0.2)
 
     .project-details
         width: 50%
@@ -58,6 +81,27 @@
         -moz-box-sizing: border-box
         box-sizing: border-box
         
+        #carousel-container
+            position: relative
+            margin-top: 20px
+
+            .carousel-controls
+                position: absolute
+                width: 100%
+                bottom: 90px
+                padding: 0 10px
+
+                button
+                    position: absolute
+                    top: 50%
+                    transform: translateY(-50%)
+
+                    &:first-child
+                        left: 10px
+
+                    &:last-child
+                        right: 10px
+
         button
             width: 40px
             position: absolute
