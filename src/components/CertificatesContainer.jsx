@@ -7,6 +7,7 @@ const CertificatesContainer = () => {
     { src: "/img/certificates/certificado_imersao_mobile_flutter_alura.PNG", category: "Flutter" },
     { src: "/img/certificates/php_avancado.PNG", category: "PHP" },
     { src: "/img/certificates/certificado_ia_na_pratica_fundamentos_da_inteligencia_artificial.PNG", category: "IA" },
+    { src: "/img/certificates/certificado_ferramentas_de_ia_e_sua_utilizacao_pratica.png", category: "IA" },
     { src: "/img/certificates/certificado_como_aproveitar_a_ia_para_estudar_melhor_treina_barasil.PNG", category: "IA" },
     { src: "/img/certificates/inteligencia_artificial.PNG", category: "IA" },
     { src: "/img/certificates/lgpd.PNG", category: "LGPD" },

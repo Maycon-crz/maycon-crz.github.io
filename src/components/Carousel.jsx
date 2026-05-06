@@ -5,6 +5,10 @@ import "../styles/components/carousel.sass"
 const Carousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  if (!images || images.length === 0) return null;
+
+  const isObject = typeof images[0] === 'object';
+
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
   };
@@ -13,23 +17,41 @@ const Carousel = ({ images }) => {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
   };
 
+  const goTo = (index) => setCurrentIndex(index);
+
+  const current = isObject ? images[currentIndex] : { src: images[currentIndex], title: '', description: '' };
+
   return (
     <div id="carousel-container">
       <div className="carousel-slide">
-        <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
+        <img src={current.src} alt={current.title || `Slide ${currentIndex + 1}`} />
         <div className="carousel-controls">
-          <button onClick={prevSlide}>
-            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
-              <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
-            </svg>
-          </button>
-          <button onClick={nextSlide}>
-            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
-              <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
-            </svg>
-          </button>
+          <button onClick={prevSlide} aria-label="Anterior">‹</button>
+          <button onClick={nextSlide} aria-label="Próximo">›</button>
         </div>
       </div>
+
+      {isObject && (
+        <div className="carousel-meta">
+          <div className="carousel-description">
+            <h4>{current.title}</h4>
+            <p>{current.description}</p>
+          </div>
+
+          <div className="carousel-thumbnails">
+            {images.map((img, idx) => (
+              <button
+                key={idx}
+                className={`thumb ${idx === currentIndex ? 'active' : ''}`}
+                onClick={() => goTo(idx)}
+                aria-label={`Ir para ${img.title || `slide ${idx + 1}`}`}
+              >
+                <img src={img.src} alt={img.title || `thumb ${idx + 1}`} />
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 };

@@ -3,6 +3,7 @@ import SkillsTabs from './SkillsTabs'
 import CertificatesContainer from './CertificatesContainer'
 import '../styles/components/maincontent.sass'
 import FooterContainer from './FooterContainer'
+import CompanyProjects from './CompanyProjects'
 
 const MainContent = () => {
   return (
@@ -12,6 +13,8 @@ const MainContent = () => {
       <ProjectsContainer />
       <hr />
       <CertificatesContainer />
+      <hr />
+      <CompanyProjects />
       <FooterContainer />
     </main>
   )
