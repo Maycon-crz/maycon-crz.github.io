@@ -44,6 +44,13 @@ const SkillsTabs = () => {
             </button>
           </a>
         </li>
+        <li className="nav-item" id="button-redirect-companies">
+          <a href="#company-projects-container">
+            <button className={`nav-link`}>
+                Empresas
+            </button>
+          </a>
+        </li>
       </ul>
 
       <div className="tab-content mt-3">

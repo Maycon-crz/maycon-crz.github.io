@@ -22,7 +22,7 @@ const Carousel = ({ images }) => {
   const current = isObject ? images[currentIndex] : { src: images[currentIndex], title: '', description: '' };
 
   return (
-    <div id="carousel-container">
+    <div className="carousel-container">
       <div className="carousel-slide">
         <img src={current.src} alt={current.title || `Slide ${currentIndex + 1}`} />
         <div className="carousel-controls">
