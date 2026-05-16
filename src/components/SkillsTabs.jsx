@@ -33,21 +33,21 @@ const SkillsTabs = () => {
         <li className="nav-item">
           <a href="#projects-container">
             <button className={`nav-link`}>
-                Projetos
+              Projetos
             </button>
           </a>
         </li>
         <li className="nav-item" id="button-redirect-certificates">
           <a href="#certificates-carousel-container">
             <button className={`nav-link`}>
-                Certificados
+              Certificados
             </button>
           </a>
         </li>
         <li className="nav-item" id="button-redirect-companies">
           <a href="#company-projects-container">
             <button className={`nav-link`}>
-                Empresas
+              Empresas que atuei
             </button>
           </a>
         </li>

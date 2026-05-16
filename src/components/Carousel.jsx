@@ -36,6 +36,18 @@ const Carousel = ({ images }) => {
           <div className="carousel-description">
             <h4>{current.title}</h4>
             <p>{current.description}</p>
+            <div className="carousel-store-links">
+              {current.linkPlay && (
+                <a href={current.linkPlay} target="_blank" rel="noopener noreferrer" className="carousel-link carousel-link--play">
+                  Google Play
+                </a>
+              )}
+              {current.linkApple && (
+                <a href={current.linkApple} target="_blank" rel="noopener noreferrer" className="carousel-link carousel-link--apple">
+                  Apple Store
+                </a>
+              )}
+            </div>
           </div>
 
           <div className="carousel-thumbnails">

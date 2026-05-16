@@ -7,11 +7,11 @@ const projectsCompanies = [
     projectTitle: 'Projetos na FV Sistemas',
     description: 'Principais atividades: Desenvolvimento, publicação e manutenção de aplicativos Flutter, alem de criação de End-Point e manutenção de aplicações web PHP.',
     images: [
-      { src: '/img/empresas/bela_vista.png', title: 'Bela Vista', description: 'Manutenção, atualizações e publicação do aplicativo Flutter nas lojas Google Play e Apple Store. Algumas implementações realizadas: ajustes no layout, streaming de camera ao vivo, reservas de espaços, inscrições de eventos, implementação de deploy automático com GitHub Actions, criação de APIs e manutenção de sistema PHP integrado ao app.' },
-      { src: '/img/empresas/adh.png', title: 'ADH App', description: 'Lançamento, Manutenção, atualizações e publicação do aplicativo Flutter nas lojas Google Play e Apple Store.' },
-      { src: '/img/empresas/baependi.png', title: 'Baependi', description: 'Lançamento, Manutenção, atualizações e publicação do aplicativo Flutter nas lojas Google Play e Apple Store.' },
-      { src: '/img/empresas/guarani.png', title: 'Guarani', description: 'Lançamento, Manutenção, atualizações e publicação do aplicativo Flutter nas lojas Google Play e Apple Store.' },
-      { src: '/img/empresas/tabajara.png', title: 'Tabajara', description: 'Lançamento, Manutenção, atualizações e publicação do aplicativo Flutter nas lojas Google Play e Apple Store.' }
+      { src: '/img/empresas/bela_vista.png', title: 'Bela Vista', description: 'Manutenção, atualizações e publicação do aplicativo Flutter nas lojas Google Play e Apple Store. Algumas implementações realizadas: ajustes no layout, streaming de camera ao vivo, reservas de espaços, inscrições de eventos, implementação de deploy automático com GitHub Actions, criação de APIs e manutenção de sistema PHP integrado ao app.', linkPlay: 'https://play.google.com/store/apps/details?id=br.com.fvsis.belavista&pcampaignid=web_share', linkApple: 'https://apps.apple.com/br/app/bela-vista-country-club/id6450434451' },
+      { src: '/img/empresas/adh.png', title: 'ADH App', description: 'Lançamento, Manutenção, atualizações e publicação do aplicativo Flutter nas lojas Google Play e Apple Store.', linkPlay: 'https://play.google.com/store/apps/details?id=br.com.fvsis.adhering&pcampaignid=web_share', linkApple: 'https://apps.apple.com/br/app/clube-adhering/id6503148550' },
+      { src: '/img/empresas/baependi.png', title: 'Baependi', description: 'Lançamento, Manutenção, atualizações e publicação do aplicativo Flutter nas lojas Google Play e Apple Store.', linkPlay: 'https://play.google.com/store/apps/details?id=br.com.fvsis.clube_atletico_baependi&pcampaignid=web_share', linkApple: 'https://apps.apple.com/br/app/clube-baependi/id6751511810' },
+      { src: '/img/empresas/guarani.png', title: 'Guarani', description: 'Lançamento, Manutenção, atualizações e publicação do aplicativo Flutter nas lojas Google Play e Apple Store.', linkPlay: 'https://play.google.com/store/apps/details?id=br.com.fvsis.guarani&pcampaignid=web_share', linkApple: 'https://apps.apple.com/br/app/guarani-esporte-clube/id6478183907' },
+      { src: '/img/empresas/tabajara.png', title: 'Tabajara', description: 'Lançamento, Manutenção, atualizações e publicação do aplicativo Flutter nas lojas Google Play e Apple Store.', linkPlay: 'https://play.google.com/store/apps/details?id=br.com.fv.apptabajara.clube_tabajara&pcampaignid=web_share', linkApple: 'https://apps.apple.com/br/app/tabajara-t%C3%AAnis-clube/id1525967999' }
     ],
     technologies: ['Flutter', 'Dart', 'PHP', 'JavaScript', 'API REST', 'GitHub', 'MySQL']
   },
@@ -21,10 +21,10 @@ const projectsCompanies = [
     role: 'Programador Java - Trainee',
     period: 'Setembro 2023 - Dezembro 2023',
     projectTitle: '',
-    description: 'Principais atividades: Programação de códigos Java relacionados a plataformas de educação.',    
+    description: 'Principais atividades: Programação de códigos Java relacionados a plataformas de educação. Principais atividades: Programação de códigos Java relacionados a plataformas de educação.',
+    description: 'Principais atividades: Programação de códigos Java relacionados a plataformas de educação, treinamento sobre desenvolvimento e manutenção de query no SQLServer para manipulação e consulta de dados. A experiência também proporcionou aprendizado sobre desenvolvimento em equipe, colaborando com outros desenvolvedores no ciclo de desenvolvimento de software.',
     technologies: ['Java', 'SQLServer', 'Tomcat', 'Eclipse']
-  }
-  ,
+  },
   {
     id: 'cb-sistemas-2022',
     company: 'CB Sistemas',
@@ -44,7 +44,7 @@ const projectsCompanies = [
     role: 'Estágio em programação',
     period: 'Jun 2017 - Out 2017',
     projectTitle: '',
-    description: 'Atualizava conteúdo do site da empresa. Aprimorei conhecimentos em desenvolvimento web: HTML, CSS, JavaScript e PHP.',
+    description: 'Atualizava conteúdo no site da empresa, aprimorando conhecimentos em desenvolvimento web: HTML, CSS, JavaScript e PHP.',
     technologies: ['HTML', 'CSS', 'JavaScript', 'PHP']
   }
 ]
