@@ -112,10 +112,27 @@
 @media (max-width: 768px)
   .carousel-container
     .carousel-slide
-      min-height: 250px
+      min-height: 200px
 
       img
-        max-height: 400px
+        height: 180px !important
 
       .carousel-controls
-        bottom: 50px
+        bottom: 40px
+
+    .carousel-meta
+      flex-direction: column
+      gap: 12px
+
+      .carousel-description
+        padding-right: 0
+
+      .carousel-thumbnails
+        flex-wrap: wrap
+        justify-content: flex-start
+        gap: 6px
+
+        .thumb
+          img
+            width: 48px
+            height: 48px
