@@ -31,7 +31,7 @@ const projectsCompanies = [
     role: 'Programador Flutter (Estágio)',
     period: 'Jan 2022 - Nov 2022',
     projectTitle: 'Projetos na CB Sistemas',
-    description: 'Estágio em Dart/Flutter, desenvolvia componentes para serem utilizados em sistemas da empresa. Participei desde o início do desenvolvimento de um sistema de gerenciamento com listagem de ticket médio e gráficos, e também programei outro sistema relacionado a checkout. Local: Blumenau, Santa Catarina, Brasil.',
+    description: 'Estágio em Dart/Flutter, desenvolvia componentes para serem utilizados em aplicativos da empresa. Participei desde o início do desenvolvimento de um aplicativo de gerenciamento com listagem de ticket médio e gráficos, e também programei outro app relacionado a checkout. Local: Blumenau, Santa Catarina, Brasil.',
     images: [
       { src: '/img/empresas/tutom_gerencial.png', title: 'Tutom Gerencial', description: 'Aplicativo Flutter com listagem de ticket médio e gráficos; participei do desenvolvimento de componentes reutilizáveis, integração de funcionalidades e criação de gráficos dinâmicos.' }
     ],
