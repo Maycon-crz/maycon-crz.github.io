@@ -13,7 +13,7 @@ const projectsCompanies = [
       { src: '/img/empresas/guarani.png', title: 'Guarani', description: 'Lançamento, Manutenção, atualizações e publicação do aplicativo Flutter nas lojas Google Play e Apple Store.', linkPlay: 'https://play.google.com/store/apps/details?id=br.com.fvsis.guarani&pcampaignid=web_share', linkApple: 'https://apps.apple.com/br/app/guarani-esporte-clube/id6478183907' },
       { src: '/img/empresas/tabajara.png', title: 'Tabajara', description: 'Lançamento, Manutenção, atualizações e publicação do aplicativo Flutter nas lojas Google Play e Apple Store.', linkPlay: 'https://play.google.com/store/apps/details?id=br.com.fv.apptabajara.clube_tabajara&pcampaignid=web_share', linkApple: 'https://apps.apple.com/br/app/tabajara-t%C3%AAnis-clube/id1525967999' }
     ],
-    technologies: ['Flutter', 'Dart', 'PHP', 'JavaScript', 'API REST', 'GitHub', 'MySQL']
+    technologies: ['Flutter', 'Dart', 'PHP', 'JavaScript', 'API REST', 'GitHub', 'CI/CD', 'GitHub Actions', 'Firebase', 'MySQL', 'Google Play Console', 'Apple Store Connect', 'Xcode', 'Android Studio', 'Push Notifications.']
   },
   {
     id: 'edusoft-2023',
@@ -33,7 +33,7 @@ const projectsCompanies = [
     projectTitle: 'Projetos na CB Sistemas',
     description: 'Estágio em Dart/Flutter, desenvolvia componentes para serem utilizados em sistemas da empresa. Participei desde o início do desenvolvimento de um sistema de gerenciamento com listagem de ticket médio e gráficos, e também programei outro sistema relacionado a checkout. Local: Blumenau, Santa Catarina, Brasil.',
     images: [
-      { src: '/img/empresas/tutom_gerencial.png', title: 'Tutom Gerencial', description: 'Sistema de gerenciamento com listagem de ticket médio e gráficos; participei do desenvolvimento de componentes reutilizáveis, integração de funcionalidades e criação de gráficos dinâmicos.' }
+      { src: '/img/empresas/tutom_gerencial.png', title: 'Tutom Gerencial', description: 'Aplicativo Flutter com listagem de ticket médio e gráficos; participei do desenvolvimento de componentes reutilizáveis, integração de funcionalidades e criação de gráficos dinâmicos.' }
     ],
     technologies: ['Flutter', 'Dart']
   }
