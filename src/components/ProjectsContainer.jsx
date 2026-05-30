@@ -31,8 +31,8 @@ const ProjectsContainer = () => {
     "/img/modelo_php_flutter/app/exclusao_de_postagem_parte_1.PNG",
     "/img/modelo_php_flutter/site/home.PNG",
     "/img/modelo_php_flutter/site/janela_de_login_e_cadastro_de_usuario_parte_1.PNG",
-    "/img/modelo_php_flutter/site/painel_de_usuario_parte_1.PNG"  
-  ];  
+    "/img/modelo_php_flutter/site/painel_de_usuario_parte_1.PNG"
+  ];
 
 
   const aplicativoRecicladArte = [
@@ -54,6 +54,14 @@ const ProjectsContainer = () => {
     "/img/sistema_crud_laravel_vuejs/editar_contato.png"
   ];
 
+  const luanaIA = [
+    "/img/luana/home_luana_ia.png",
+    "/img/luana/drawer_luana_ia.png",
+    "/img/luana/karaoke_luana_ia.png",
+    "/img/luana/karaoke_cadastro_musica_luana_ia.png",
+    "/img/luana/marcketing_pessoal_luana_ia.png"
+  ];
+
 
   // Estados separados para cada projeto
   const [showDetailsRecicladArte, setShowDetailsRecicladArte] = useState(false);
@@ -63,23 +71,26 @@ const ProjectsContainer = () => {
   const [showDetailsAplicativoRecicladArte, setShowDetailsAplicativoRecicladArte] = useState(false);
   const [showDetailsSistemaEmJava, setShowDetailsSistemaEmJava] = useState(false);
   const [showDetailsSistemaCRUDLaravelVueJS, setShowDetailsSistemaCRUDLaravelVueJS] = useState(false);
-  
+  const [showDetailsLuanaIA, setShowDetailsLuanaIA] = useState(false);
+
 
   const handleCloseDetails = (project) => {
     if (project === "recicladarte") {
       setShowDetailsRecicladArte(false);
     } else if (project === "devpegasus") {
       setShowDetailsDevPegasus(false);
-    }else if(project === "receitasedrinks"){
+    } else if (project === "receitasedrinks") {
       setShowDetailsReceitasEdrinks(false);
-    }else if(project === "sistemasdistribuídos"){
+    } else if (project === "sistemasdistribuídos") {
       setShowDetailsSistemasDistribuidos(false);
-    }else if(project === "aplicativorecicladarte"){      
+    } else if (project === "aplicativorecicladarte") {
       setShowDetailsAplicativoRecicladArte(false);
-    }else if(project === "sistemaemjava"){
+    } else if (project === "sistemaemjava") {
       setShowDetailsSistemaEmJava(false);
-    }else if(project === "sistemacrudlaravelvuejs"){
+    } else if (project === "sistemacrudlaravelvuejs") {
       setShowDetailsSistemaCRUDLaravelVueJS(false);
+    } else if (project === "luanaia") {
+      setShowDetailsLuanaIA(false);
     }
   };
 
@@ -116,7 +127,7 @@ const ProjectsContainer = () => {
           <p>&emsp;São dois repositórios de sistemas distribuídos no GitHub contendo duas bases, uma para site PHP e outra para aplicativo Flutter que funcionam de forma integrada, juntamente com as documentações com as tecnologias usadas, informações para instalar, o que é necessário rodar os projetos e imagens ilustrativas.</p>
           <Carousel images={sistemasDistribuidos} />
           <button onClick={() => setShowDetailsSistemasDistribuidos(true)} className='btn-see-projects'>Ver Mais</button>
-        </div>        
+        </div>
         <div className="project-card">
           <h3>Sistema em Java</h3>
           <p>&emsp;Sistema Java WEB desenvolvido em grupo para apresentar no 5ª seminário da faculdade no curso de Análise e desenvolvimento de sistemas.</p>
@@ -130,17 +141,23 @@ const ProjectsContainer = () => {
           <button onClick={() => setShowDetailsSistemaCRUDLaravelVueJS(true)} className='btn-see-projects'>Ver Mais</button>
         </div>
         <div className="project-card">
+          <h3>Luana IA</h3>
+          <p>&emsp;Aplicativo desenvolvido para ser uma assistente pessoal, integrado a algumas APIs de inteligência artificial, dinâmica volta ao aprendizado de idiomas com karaokê, cadastro de letras e traduções de músicas além do reproduzir as músicas, dinâmica para criação de postagens relacionadas a marketing pessoal integrada com a plataforma de automação Pabbly (em desenvolvimento), integração com a API do GitHub para retornar informações sobre os repositórios, entre outras funções em desenvolvimento.</p>
+          <Carousel images={luanaIA} />
+          <button onClick={() => setShowDetailsLuanaIA(true)} className='btn-see-projects'>Ver Mais</button>
+        </div>
+        <div className="project-card">
           <h3>Site Portfólio</h3>
           <p>
             &emsp;Este site portfólio foi construído com o intuito de mostrar um pouco sobre os projetos que desenvolvi. As tecnologias usadas no projeto são: Javascript, ReactJS, SASS, GIT, está hospedado no GitHub Pages com acesso ao código público.
-            <br/>
+            <br />
             Aqui está o <a href="https://github.com/Maycon-crz" target="_blank">Link</a> para o repositório do site portfólio.
-            <br/><br/><br/>
+            <br /><br /><br />
             Aplicativo - Receitas e Drinks (Em breve)
-            <br/><br/>
+            <br /><br />
             &emsp;Após criar a API para retornar os dados do site receitas e drinks, o objetivo é criar um aplicativo Flutter para que possa facilitar o acesso as receitas, podendo também ter uma melhor ergonomia para que os usuários possam adotar o aplicativo como favorito.
           </p>
-        </div>        
+        </div>
       </div>
       {/* Renderizar a janela de detalhes para cada projeto */}
       {showDetailsRecicladArte && (
@@ -171,7 +188,7 @@ const ProjectsContainer = () => {
           <Carousel images={recicladarteSite} />
         </div>
       )}
-      {showDetailsAplicativoRecicladArte && (                
+      {showDetailsAplicativoRecicladArte && (
         <div className="project-details">
           <button onClick={() => handleCloseDetails("aplicativorecicladarte")}>X</button>
           <h3>Aplicativo Recicladarte</h3>
@@ -183,7 +200,7 @@ const ProjectsContainer = () => {
             <li>Consumo de API do site Recicladarte</li>
             <li>GetX</li>
             <li>JWT</li>
-          </ul>          
+          </ul>
           <Carousel images={aplicativoRecicladArte} />
         </div>
       )}
@@ -230,10 +247,10 @@ const ProjectsContainer = () => {
           <Carousel images={receitasEdrinks} />
         </div>
       )}
-      {showDetailsSistemasDistribuidos && (                
+      {showDetailsSistemasDistribuidos && (
         <div className="project-details">
           <button onClick={() => handleCloseDetails("sistemasdistribuídos")}>X</button>
-          <h3>Modelo de sistema PHP e Flutter</h3>          
+          <h3>Modelo de sistema PHP e Flutter</h3>
           <p><a href="https://github.com/Maycon-crz/modelo_de_sistema_php_com_api" target="_blank">Repositório no GitHub</a></p>
           <h4>Tecnologias usadas no  projeto Modelos de sistema</h4>
           <ul>
@@ -245,15 +262,15 @@ const ProjectsContainer = () => {
             <li>Bootstrap</li>
             <li>Jquery</li>
             <li>Dart</li>
-            <li>Flutter</li>          
+            <li>Flutter</li>
             <li>GetX</li>
             <li>JWT</li>
           </ul>
           <h4>Funções</h4>
           <Carousel images={sistemasDistribuidos} />
         </div>
-      )}      
-      {showDetailsSistemaEmJava && (                
+      )}
+      {showDetailsSistemaEmJava && (
         <div className="project-details">
           <button onClick={() => handleCloseDetails("sistemaemjava")}>X</button>
           <h3>Sistema em Java - apresentado no semínário da faculdade</h3>
@@ -269,7 +286,31 @@ const ProjectsContainer = () => {
           <Carousel images={sistemaJava} />
         </div>
       )}
-      {showDetailsSistemaCRUDLaravelVueJS && (                
+      {showDetailsLuanaIA && (
+        <div className="project-details">
+          <button onClick={() => handleCloseDetails("luanaia")}>X</button>
+          <h3>Luana IA</h3>
+          <p><a href="https://github.com/Maycon-crz/luana_ia" target="_blank">Repositório no GitHub</a></p>
+          <h4>Tecnologias usadas no projeto:</h4>
+          <ul>
+            <li>Dart</li>
+            <li>Flutter</li>
+            <li>SQLite (local)</li>
+            <li>Integração com IA</li>
+            <li>just_audio</li>
+            <li>file_picker</li>
+            <li>flutter_overlay_window</li>
+          </ul>
+          <h4>Funcionalidades</h4>
+          <ul>
+            <li>Karaokê: cadastro e listagem de músicas com letras originais e traduções;</li>
+            <li>Marketing Pessoal: criação e gerenciamento de postagens para redes sociais;</li>
+            <li>Integração com IA para auxílio nas tarefas;</li>
+          </ul>
+          <Carousel images={luanaIA} />
+        </div>
+      )}
+      {showDetailsSistemaCRUDLaravelVueJS && (
         <div className="project-details">
           <button onClick={() => handleCloseDetails("sistemacrudlaravelvuejs")}>X</button>
           <h3>Sistema CRUD de contatos desenvolvido com back-end Laravel e front-end VueJS</h3>
@@ -287,7 +328,7 @@ const ProjectsContainer = () => {
           </ul>
           <Carousel images={sistemaCRUDLaravelVueJS} />
         </div>
-      )}      
+      )}
     </section>
   )
 }
