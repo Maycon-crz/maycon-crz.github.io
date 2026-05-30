@@ -290,7 +290,7 @@ const ProjectsContainer = () => {
         <div className="project-details">
           <button onClick={() => handleCloseDetails("luanaia")}>X</button>
           <h3>Luana IA</h3>
-          <p><a href="https://github.com/Maycon-crz/luana_ia" target="_blank">Repositório no GitHub</a></p>
+          <p></p>
           <h4>Tecnologias usadas no projeto:</h4>
           <ul>
             <li>Dart</li>
