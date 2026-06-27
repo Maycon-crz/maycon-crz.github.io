@@ -17,7 +17,7 @@ const CompanyProjects = () => {
               <p className="height-auto">Tecnologias: {p.technologies.join(', ')}</p>
             )}
             <h4>{p.projectTitle}</h4>
-            {p.images && p.images.length > 0 && <Carousel images={p.images} />}
+            {p.images && p.images.length > 0 && <Carousel images={p.images} showSlide={false} />}
           </div>
         ))}
         

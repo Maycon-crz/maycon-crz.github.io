@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "../styles/components/carousel.sass"
 
-const Carousel = ({ images }) => {
+const Carousel = ({ images, showSlide = true }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   if (!images || images.length === 0) return null;
@@ -23,13 +23,15 @@ const Carousel = ({ images }) => {
 
   return (
     <div className="carousel-container">
-      <div className="carousel-slide">
-        <img src={current.src} alt={current.title || `Slide ${currentIndex + 1}`} />
-        <div className="carousel-controls">
-          <button onClick={prevSlide} aria-label="Anterior">‹</button>
-          <button onClick={nextSlide} aria-label="Próximo">›</button>
+      {showSlide && (
+        <div className="carousel-slide">
+          <img src={current.src} alt={current.title || `Slide ${currentIndex + 1}`} />
+          <div className="carousel-controls">
+            <button onClick={prevSlide} aria-label="Anterior">‹</button>
+            <button onClick={nextSlide} aria-label="Próximo">›</button>
+          </div>
         </div>
-      </div>
+      )}
 
       {isObject && (
         <div className="carousel-meta">
